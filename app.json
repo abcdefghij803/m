@@ -1,0 +1,91 @@
+
+{
+  "name": "Mass Reporter Bot - Fixed Issues",
+  "description": "Advanced Telegram Mass Reporter Bot with Fixed F-string Issues and Correct Developer Handle",
+  "repository": "https://github.com/yourusername/mass-reporter-bot",
+  "logo": "https://i.ibb.co/HfpFXq02/x.jpg",
+  "keywords": ["telegram", "bot", "reporter", "python", "mass-reporting"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your Telegram Bot Token from @BotFather",
+      "required": true
+    },
+    "ADMIN_USER_ID": {
+      "description": "Your Telegram User ID (Admin)",
+      "required": true
+    },
+    "API_ID": {
+      "description": "Your Telegram API ID from my.telegram.org (Required for reporting)",
+      "required": false
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash from my.telegram.org (Required for reporting)",
+      "required": false
+    },
+    "WELCOME_IMAGE_URL": {
+      "description": "Welcome image URL",
+      "value": "https://i.ibb.co/HfpFXq02/x.jpg",
+      "required": false
+    },
+    "STATUS_IMAGE_URL": {
+      "description": "Status image URL",
+      "value": "https://i.ibb.co/HfpFXq02/x.jpg",
+      "required": false
+    },
+    "SESSION_IMAGE_URL": {
+      "description": "Session generator image URL",
+      "value": "https://i.ibb.co/HfpFXq02/x.jpg",
+      "required": false
+    },
+    "REPORT_IMAGE_URL": {
+      "description": "Reporting image URL",
+      "value": "https://i.ibb.co/HfpFXq02/x.jpg",
+      "required": false
+    },
+    "PREMIUM_IMAGE_URL": {
+      "description": "Premium panel image URL",
+      "value": "https://i.ibb.co/HfpFXq02/x.jpg",
+      "required": false
+    },
+    "REPORT_INTERVAL": {
+      "description": "Seconds between each report (1-30)",
+      "value": "5",
+      "required": false
+    },
+    "MAX_REPORTS_PER_SESSION": {
+      "description": "Maximum reports per session",
+      "value": "10",
+      "required": false
+    },
+    "SESSION_COOLDOWN": {
+      "description": "Session cooldown in seconds",
+      "value": "300",
+      "required": false
+    },
+    "SUPPORT_GROUP": {
+      "description": "Your support group link",
+      "value": "https://t.me/your_support",
+      "required": false
+    },
+    "UPDATE_GROUP": {
+      "description": "Your update channel link",
+      "value": "https://t.me/your_updates",
+      "required": false
+    },
+    "YOUTUBE_CHANNEL": {
+      "description": "Your YouTube channel link",
+      "value": "https://youtube.com/@your_channel",
+      "required": false
+    },
+    "DEVELOPER_USERNAME": {
+      "description": "Developer username",
+      "value": "rizz_xfx",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
